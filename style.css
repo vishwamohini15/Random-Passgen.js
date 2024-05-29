@@ -1,0 +1,115 @@
+body{
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: lightslategray;
+}
+h1{
+     color: rgb(251, 251, 194);
+}
+.container{
+     height: 300px;
+     width: 500px;
+     background-color: lightsalmon;
+     border-radius: 14px;
+     padding: 20px;
+}
+.pass-container{
+     display: flex;
+     justify-content: space-between;
+     border: 2px solid darkmagenta;
+     padding: 6px;
+     border-radius: 12px;
+     background-color: #fff;
+}
+input{
+     border: none;
+     outline: none;
+     width: 100%;
+     padding: 5px;
+     font-size: 25px;
+}
+.btn{
+     padding: 20px;
+     font-size: 22px;
+     background-color: blue;
+     color: #fff;
+     width:max-content;
+     margin: 25px 0px;
+     border-radius: 12px;
+}
+.btn:hover{
+     background-color: rgb(177, 221, 133);
+     /* transform: scale(0.9); */
+}
+.save{
+     width:max-content;
+     padding: 17px;
+     border-radius: 20px;
+}
+.save:hover{
+     background-color: lightseagreen;
+     
+}
+.alert-container{
+     position: fixed;
+     right: 150px;
+     bottom: 110px;
+     border: 1px solid darkkhaki;
+     padding: 20px 10px;
+     font-size: 20px;
+     background-color: lightgreen;
+     border-radius: 14px;
+     transition: .4s;
+}
+
+.active{
+     right: -300px;
+}
+
+
+@media screen and (max-width: 480px) {
+     body {
+       background-color: rgb(206, 38, 63);
+     }
+
+     .container{
+          height: 250px;
+          width: 320px;
+          background-color:lightseagreen;
+          border-radius: 14px;
+          padding: 20px;
+     }
+     .pass-container{
+          display: flex;
+          justify-content: space-between;
+          border: 2px solid darkmagenta;
+          padding: 1px;
+          border-radius: 7px;
+          background-color: #fff;
+     }
+     .btn{
+          padding: 12px;
+     }
+     .save{
+          width:max-content;
+          padding: 8px;
+          border-radius: 20px;
+     }
+     .save:hover{
+          background-color: rgb(178, 156, 32);
+          
+     }
+     .alert-container{
+          border: 1px solid darkkhaki;
+          padding: 13px 8px;
+          font-size: 16px;
+          background-color: rgb(254, 241, 7);
+          color: rgb(243, 6, 6);
+          border-radius: 10px;
+          transition: .4s;
+     }
+   }
